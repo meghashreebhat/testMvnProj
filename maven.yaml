@@ -1,0 +1,8 @@
+---
+ - name: install maven
+   hosts: webservers
+   tasks:
+     - command: apt update
+     - apt:
+        name: maven
+        state: present
